@@ -1,0 +1,93 @@
+/*
+    Created on : 09.10.2015, 15:04:00
+    Author     : Lucas Reeh <lreeh@tugraz.at>
+*/
+body {
+    font-size: 10pt;
+}
+
+#portrait {
+    height: 12em;
+}
+
+.light-grey {
+    opacity: 0.5;
+}
+
+body > md-toolbar {
+    height: 40px;
+    min-height: 40px;
+}
+
+#content > div {
+    padding-top: 0.3em;
+}
+
+#content > div > section > md-toolbar {
+    height: 36px;
+    min-height: 36px;
+    font-size: 1.3em;
+}
+
+#content > div > section > md-toolbar > div {
+    font-size: 1.00em;
+}
+
+#content > div > section > md-content {
+    padding-top: 0.6em;
+    padding-bottom: 0.8em;
+}
+
+.entry-h1 {
+    padding-top: 0.1em;
+    padding-bottom: 0.2em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.entry-h2 {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    font-size: 1.1em;
+}
+
+.entry-time {
+    padding-top: 0.2em;
+    opacity: 0.75;
+}
+
+.entry-p {
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+}
+
+.entry-divider {
+    margin-top: 0.3em;
+}
+
+.medium-width {
+    min-width: 13em;
+}
+
+.small-width {
+    min-width: 9em;
+}
+
+.force-page-break {
+    page-break-before: always;
+}
+
+.entry-skill {
+    display:inline;
+    padding-top: 0.6em;
+    font-size: 1.05em;
+}
+
+
+// print only works nice in firefox
+// use zoom to adjust page-breaks
+@media print {
+    #content > div {
+        page-break-inside: avoid;
+    }
+}
