@@ -2,7 +2,7 @@
 
 CV in Angular Material
 
-See Lucas_Reeh_CV_2015.pdf for preview (printed from browswer to pdf)
+See Lucas_Reeh_CV_2016.pdf for preview (printed from browswer to pdf)
 
 Usage:
 

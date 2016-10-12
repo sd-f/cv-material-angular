@@ -19,13 +19,14 @@ app.controller('AppCtrl', ['$scope', function ($scope) {
 
     $scope.cv.country = "Austria";
     $scope.cv.city = "Graz";
+    $scope.cv.linkedinurl = "linkedin.com/in/lucasreeh";
 
     $scope.cv.contact = {};
     $scope.cv.contact.business = {};
 
     $scope.cv.contact.business.phone = "+43 (0) 316 / 873 - 38571";
     $scope.cv.contact.business.address = "Wastiangasse 6, A-8010 Graz, Austria";
-    $scope.cv.contact.business.email = "lreeh@tugraz.at";
+    $scope.cv.contact.business.email = "lr86gm@gmail.com";
 
     $scope.cv.contact.private = {};
 
@@ -43,27 +44,24 @@ app.controller('AppCtrl', ['$scope', function ($scope) {
     $scope.cv.skills = [
       "Software Architectural Design",
       "Agile Project Management",
-      "Web Development",
-      "Software Engineering",
-      "Software Project Management",
-      "Software Design",
-      "Teaching/mentoring",
-      "Database Design",
-      "Database Development",
+      "Software Development",
+      "Web Application Development",
+      "Teaching/Mentoring",
+      "Database Development (Oracle, MySQL, Postgres,...)",
       "Group Work",
-      "Java Enterprise Edition",
-      "Continous Integration",
       "Java",
-      "Testing",
+      "Java EE",
+      "Angular2",
+      "Continous Integration",
+      "Test Developer",
       "RESTful Architecture",
-      "Scrum",
-      "Maven",
+      "Android Development",
       "Large Scale Development",
       "Creative Development",
-      "Web Design",
       "Team Leadership",
       "Requirements Analysis",
       "Design Patterns",
+      "3D (Game, Mobile) Development",
       "and many more"
     ];
 
@@ -77,6 +75,7 @@ app.controller('AppCtrl', ['$scope', function ($scope) {
       "Travelling the World",
       "Exploring and experiencing new Cultures",
       "Enjoying and producing Music",
+      "Beach-Volleyball", "Surfing", "Golf",
       "Visiting electronic music festivals",
       "Watching TV-series and science fiction movies"
     ];
@@ -96,7 +95,9 @@ app.controller('AppCtrl', ['$scope', function ($scope) {
       "Guatemala",
       "Italy",
       "Maldives",
+      "Marroco",
       "Montenegro",
+      "Portugal",
       "Serbia",
       "Slovenia",
       "Spain",
@@ -104,7 +105,8 @@ app.controller('AppCtrl', ['$scope', function ($scope) {
       "Tunisia",
       "Thailand",
       "Turkey",
-      "USA"
+      "USA",
+      "etc..."
     ];
 
 

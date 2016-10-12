@@ -25,27 +25,28 @@
 
   <md-content id="content">
 
-    <div layout-padding>
-      <section class="md-shadow-bottom-z-1">
+    <div layout-padding class="noborder">
+      <section class="md-shadow-bottom-z-1 noborder">
         <md-content layout="row">
-          <md-content layout-padding>
+          <md-content layout-padding class="noborder">
             <img src="portrait.jpg" alt="Image of me" id="portrait">
           </md-content>
-          <md-content layout-padding>
+          <md-content layout-padding class="noborder">
             <h2>{{cv.firstname}} {{cv.lastname}}</h2>
             <h3>{{cv.header_tagline}}</h3>
             <p><span class="light-grey">{{cv.city}}</span> | {{cv.country}}</p>
+            <p><a href="cv.linkedinurl">{{cv.linkedinurl}}</a></p>
           </md-content>
         </md-content>
       </section>
     </div>
 
-    <div layout-padding>
-      <section class="md-shadow-bottom-z-1">
-        <md-toolbar class="md-primary md-hue-1">
-          <div class="md-toolbar-tools">Contact</div>
+    <div layout-padding class="noborder">
+      <section class="md-shadow-bottom-z-1 noborder">
+        <md-toolbar class="md-primary md-hue-1 noborder">
+          <div class="md-toolbar-tools noborder">Contact</div>
         </md-toolbar>
-        <md-content layout="column" class="md-padding">
+        <md-content layout="column" class="md-padding noborder">
           <span class="entry-h1">Business</span>
           <md-divider class="entry-divider"></md-divider>
           <md-content layout="row">
@@ -60,7 +61,7 @@
             </md-content>
           </md-content>
         </md-content>
-        <md-content layout="column" class="md-padding">
+        <md-content layout="column" class="md-padding noborder">
           <span class="entry-h1">Private</span>
           <md-divider class="entry-divider"></md-divider>
           <md-content layout="row">
@@ -78,12 +79,12 @@
       </section>
     </div>
 
-    <div layout-padding>
-      <section class="md-shadow-bottom-z-1">
-        <md-toolbar class="md-primary md-hue-1">
+    <div layout-padding class="noborder">
+      <section class="md-shadow-bottom-z-1 noborder">
+        <md-toolbar class="md-primary md-hue-1 noborder">
           <div class="md-toolbar-tools">Personal information</div>
         </md-toolbar>
-        <md-content layout="column" class="md-padding">
+        <md-content layout="column" class="md-padding noborder">
           <md-content layout="row">
             <md-content layout="column" layout-padding class="small-width">
               <span class="entry-time">Date of birth</span> {{cv.personal.birthdate}}
@@ -103,12 +104,12 @@
     </div>
 
 
-    <div layout-padding ng-show="cv.education.length > 0">
-      <section class="md-shadow-bottom-z-1">
-        <md-toolbar class="md-primary md-hue-1">
-          <div class="md-toolbar-tools">Education</div>
+    <div layout-padding ng-show="cv.education.length > 0" class="noborder">
+      <section class="md-shadow-bottom-z-1 noborder">
+        <md-toolbar class="md-primary md-hue-1 noborder">
+          <div class="md-toolbar-tools noborder">Education</div>
         </md-toolbar>
-        <md-content layout="column" class="md-padding" ng-repeat="educationitem in cv.education">
+        <md-content layout="column" class="md-padding noborder" ng-repeat="educationitem in cv.education">
           <span class="entry-h1">{{educationitem.title}}</span>
           <span class="entry-h2" ng-show="educationitem.field && educationitem.grad">{{educationitem.field}}, {{educationitem.grad}}</span>
           <p class="entry-p" ng-show="educationitem.description">{{educationitem.description}}</p>
@@ -118,12 +119,12 @@
       </section>
     </div>
 
-    <div layout-padding ng-show="cv.experiences.length > 0" class="force-page-break">
-      <section class="md-shadow-bottom-z-1">
-        <md-toolbar class="md-primary md-hue-1">
-          <div class="md-toolbar-tools">Experience</div>
+    <div layout-padding ng-show="cv.experiences.length > 0" class="noborder">
+      <section class="md-shadow-bottom-z-1 noborder">
+        <md-toolbar class="md-primary md-hue-1 noborder" >
+          <div class="md-toolbar-tools noborder">Experience</div>
         </md-toolbar>
-        <md-content layout="column" class="md-padding" ng-repeat="experience in cv.experiences">
+        <md-content layout="column" class="md-padding noborder" ng-repeat="experience in cv.experiences">
           <span class="entry-h1">{{experience.title}}</span>
           <span class="entry-h2">{{experience.position}}</span>
           <p class="entry-p">{{experience.description}}</p>
@@ -134,12 +135,12 @@
     </div>
 
 
-    <div layout-padding>
-      <section class="md-shadow-bottom-z-1">
-        <md-toolbar class="md-primary md-hue-1">
-          <div class="md-toolbar-tools">Languges</div>
+    <div layout-padding class="force-page-break noborder">
+      <section class="md-shadow-bottom-z-1 noborder">
+        <md-toolbar class="md-primary md-hue-1 noborder">
+          <div class="md-toolbar-tools noborder">Languges</div>
         </md-toolbar>
-        <md-content layout="column" class="md-padding">
+        <md-content layout="column" class="md-padding noborder">
           <md-content layout="row">
             <md-content layout="column" layout-padding class="small-width" ng-repeat="language in cv.languages">
               <span class="entry-time">{{language.language}}</span> {{language.proficiency}}
@@ -149,12 +150,12 @@
       </section>
     </div>
 
-    <div layout-padding  ng-show="cv.publications.length > 0" class="force-page-break">
-      <section class="md-shadow-bottom-z-1">
-        <md-toolbar class="md-primary md-hue-1">
-          <div class="md-toolbar-tools">Publications</div>
+    <div layout-padding  ng-show="cv.publications.length > 0" class="noborder">
+      <section class="md-shadow-bottom-z-1 noborder">
+        <md-toolbar class="md-primary md-hue-1 noborder">
+          <div class="md-toolbar-tools noborder">Publications</div>
         </md-toolbar>
-        <md-content layout="column" class="md-padding"  ng-repeat="publication in cv.publications">
+        <md-content layout="column" class="md-padding noborder"  ng-repeat="publication in cv.publications">
           <span class="entry-h1">{{publication.title}}</span>
           <span class="entry-h2">{{publication.location}}</span>
           <span class="entry-time">{{publication.time}}</span>
@@ -163,12 +164,12 @@
       </section>
     </div>
 
-    <div layout-padding  ng-show="cv.awards.length > 0" >
-      <section class="md-shadow-bottom-z-1">
-        <md-toolbar class="md-primary md-hue-1">
-          <div class="md-toolbar-tools">Awards</div>
+    <div layout-padding  ng-show="cv.awards.length > 0" class="noborder">
+      <section class="md-shadow-bottom-z-1 noborder">
+        <md-toolbar class="md-primary md-hue-1 noborder">
+          <div class="md-toolbar-tools noborder">Awards</div>
         </md-toolbar>
-        <md-content layout="column" class="md-padding"  ng-repeat="award in cv.awards">
+        <md-content layout="column" class="md-padding noborder"  ng-repeat="award in cv.awards">
           <span class="entry-h1">{{award.title}}</span>
           <p class="entry-p">{{award.description}}</p>
           <span class="entry-time">{{award.time}}</span>
@@ -177,12 +178,12 @@
       </section>
     </div>
 
-    <div layout-padding>
-      <section class="md-shadow-bottom-z-1">
-        <md-toolbar class="md-primary md-hue-1">
-          <div class="md-toolbar-tools">Additional information</div>
+    <div layout-padding class="noborder">
+      <section class="md-shadow-bottom-z-1 noborder">
+        <md-toolbar class="md-primary md-hue-1 noborder">
+          <div class="md-toolbar-tools noborder">Additional information</div>
         </md-toolbar>
-        <md-content layout="column" class="md-padding">
+        <md-content layout="column" class="md-padding noborder">
           <span class="entry-h1">Skills</span>
           <md-divider class="entry-divider"></md-divider>
           <md-content class="entry-skill">
@@ -191,7 +192,7 @@
             </span>
           </md-content>
         </md-content>
-        <md-content layout="column" class="md-padding">
+        <md-content layout="column" class="md-padding noborder">
           <span class="entry-h1">Interests</span>
           <md-divider class="entry-divider"></md-divider>
           <md-content class="entry-skill">
@@ -200,7 +201,7 @@
             </span>
           </md-content>
         </md-content>
-        <md-content layout="column" class="md-padding">
+        <md-content layout="column" class="md-padding noborder">
           <span class="entry-h1">Hobbies</span>
           <md-divider class="entry-divider"></md-divider>
           <md-content class="entry-skill">
@@ -210,7 +211,7 @@
           </md-content>
         </md-content>
 
-        <md-content layout="column" class="md-padding">
+        <md-content layout="column" class="md-padding noborder">
           <span class="entry-h1">Travels</span>
           <md-divider class="entry-divider"></md-divider>
           <md-content class="entry-skill">

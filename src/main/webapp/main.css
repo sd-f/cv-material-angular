@@ -26,7 +26,7 @@ body > md-toolbar {
 #content > div > section > md-toolbar {
     height: 36px;
     min-height: 36px;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 #content > div > section > md-toolbar > div {
@@ -34,21 +34,21 @@ body > md-toolbar {
 }
 
 #content > div > section > md-content {
-    padding-top: 0.6em;
-    padding-bottom: 0.8em;
+    padding-top: 0.55em;
+    padding-bottom: 0.75em;
 }
 
 .entry-h1 {
-    padding-top: 0.1em;
-    padding-bottom: 0.2em;
-    font-size: 1.2em;
+    padding-top: 0.075em;
+    padding-bottom: 0.175em;
+    font-size: 1.15em;
     font-weight: bold;
 }
 
 .entry-h2 {
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
-    font-size: 1.1em;
+    padding-top: 0.075em;
+    padding-bottom: 0.075em;
+    font-size: 1.07em;
 }
 
 .entry-time {
@@ -83,11 +83,33 @@ body > md-toolbar {
     font-size: 1.05em;
 }
 
+.noborder {
+    border: 0 none;
+}
 
-// print only works nice in firefox
-// use zoom to adjust page-breaks
 @media print {
+
+    .md-layout-row {
+        border: 0 none;
+    }
+
+    #content {
+        border: 0 none;
+    }
+
     #content > div {
         page-break-inside: avoid;
+    }
+
+    .md-shadow-bottom-z-1 {
+        border: 0 none;
+    }
+
+    .layout-padding {
+        border: 0 none;
+    }
+
+    section {
+        border: 0 none;
     }
 }
