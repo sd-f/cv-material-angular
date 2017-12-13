@@ -127,7 +127,7 @@ app.controller('AppCtrl', ['$scope', function ($scope) {
 
     $scope.cv.education = [
       {
-        title: "Wester Washington University",
+        title: "Western Washington University",
         field: "Computer science",
         grad: "Undergraduate (Bachelor, BSc)",
         time: "2017",
