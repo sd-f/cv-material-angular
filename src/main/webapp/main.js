@@ -250,11 +250,39 @@ app.controller('AppCtrl', ['$scope', function ($scope) {
         location: "EUNIS 2014 - European University Information Systems organisation, Sweden"
       },
       {
-        title: "CAMPUSonline - How to benefit from Services for the Student Life Cycle in day-to-day University Education",
+        title: "How to benefit from Services for the Student Life Cycle in day-to-day University Education",
         time: "October 19, 2011",
         location: "AACE E-Learn 2011 - World Conference on E-Learning, USA, Hawaii"
       }
     ];
+
+  $scope.cv.certifications = [
+    {
+      title: "Oracle WebLogic Server 12c - Admin, Performance Tuning & Troubleshooting",
+      //description: "Prize for creativity",
+      time: "April 2016"
+    },
+    {
+      title: "Real World JavaEE Bootstrap",
+      //description: "Prize for creativity",
+      time: "October 2012"
+    },
+    {
+      title: "Ingenieur (\"Ing.\"​)",
+      //description: "Prize for creativity",
+      time: "September 2012"
+    },
+    {
+      title: "Advanced Skipper Training",
+      //description: "Prize for creativity",
+      time: "October 2008"
+    },
+    {
+      title: "Civil Service Certificate",
+      //description: "Prize for creativity",
+      time: "October 2005"
+    }
+  ];
 
     $scope.cv.awards = [
       {

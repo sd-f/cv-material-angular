@@ -3,7 +3,7 @@
     Author     : Lucas Reeh <lreeh@tugraz.at>
 */
 body {
-    font-size: 10pt;
+    font-size: 11pt;
 }
 
 #portrait {
@@ -34,8 +34,8 @@ body > md-toolbar {
 }
 
 #content > div > section > md-content {
-    padding-top: 0.55em;
-    padding-bottom: 0.75em;
+    padding-top: 0.4em;
+    padding-bottom: 0.2em;
 }
 
 .entry-h1 {
@@ -54,6 +54,7 @@ body > md-toolbar {
 .entry-time {
     padding-top: 0.2em;
     opacity: 0.75;
+    font-size: 10pt;
 }
 
 .entry-p {
@@ -67,6 +68,13 @@ body > md-toolbar {
 
 .medium-width {
     min-width: 13em;
+}
+
+.padding-block {
+    padding-bottom: 0.5em;
+}
+
+.entry-frame {
 }
 
 .small-width {
