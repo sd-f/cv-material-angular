@@ -15,7 +15,7 @@ app.controller('AppCtrl', ['$scope', function ($scope) {
     $scope.cv.firstname = "Lucas";
     $scope.cv.lastname = "Reeh";
 
-    $scope.cv.header_tagline = "Software Architect, Lead Developer";
+    $scope.cv.header_tagline = "Software Engineer, Freelancer";
 
     $scope.cv.country = "Austria";
     $scope.cv.city = "Graz";
@@ -127,6 +127,14 @@ app.controller('AppCtrl', ['$scope', function ($scope) {
 
     $scope.cv.education = [
       {
+        title: "Wester Washington University",
+        field: "Computer science",
+        grad: "Undergraduate (Bachelor, BSc)",
+        time: "2017",
+        description: "",
+        location: "Washington (USA)"
+      },
+      {
         title: "Graz University of Technology",
         field: "Computer science",
         grad: "Undergraduate (Bachelor, BSc)",
@@ -173,7 +181,7 @@ app.controller('AppCtrl', ['$scope', function ($scope) {
       {
         title: "Senior Software Architect, Lead Developer",
         position: "CAMPUSonline, Graz University of Technology",
-        time: "January 2012 - present",
+        time: "January 2012 - April 2017",
         location: "Graz (Austria)",
         description: "Consulting for architecturally significant requirements, analysis and evaluation of software design"
       },
