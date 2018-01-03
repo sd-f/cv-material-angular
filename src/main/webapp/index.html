@@ -51,7 +51,7 @@
             <md-content layout="column" class="padding-block medium-width">
               <span class="entry-time">Phone</span> {{cv.contact.private.phone}}
             </md-content>
-            <md-content layout="column" class="padding-block small-width">
+            <md-content layout="column" class="padding-block small-width right-padding">
               <span class="entry-time">Email</span> {{cv.contact.business.email}}
             </md-content>
             <md-content layout="column" class="padding-block small-width">
@@ -97,7 +97,7 @@
         </md-toolbar>
         <md-content layout="column" class="entry-frame md-padding noborder">
           <md-content layout="row">
-            <md-content layout="column" class="padding-block small-width" ng-repeat="language in cv.languages">
+            <md-content layout="column" class="padding-block small-width  right-padding" ng-repeat="language in cv.languages">
               <span class="entry-time">{{language.language}}</span> {{language.proficiency}}
             </md-content>
           </md-content>
@@ -185,7 +185,7 @@
           <md-divider class="entry-divider"></md-divider>
           <md-content class="entry-skill">
             <span class="entry-skill" ng-repeat="skill in cv.skills">
-              {{skill}}<span ng-show="!$last"> | </span>
+              {{skill}}<span ng-show="!$last">, </span>
             </span>
           </md-content>
         </md-content>
@@ -194,7 +194,7 @@
           <md-divider class="entry-divider"></md-divider>
           <md-content class="entry-skill">
             <span class="entry-skill" ng-repeat="interest in cv.interests">
-              {{interest}}<span ng-show="!$last"> | </span>
+              {{interest}}<span ng-show="!$last">, </span>
             </span>
           </md-content>
         </md-content>
@@ -203,7 +203,7 @@
           <md-divider class="entry-divider"></md-divider>
           <md-content class="entry-skill">
             <span class="entry-skill" ng-repeat="hobby in cv.hobbies">
-              {{hobby}}<span ng-show="!$last"> | </span>
+              {{hobby}}<span ng-show="!$last">, </span>
             </span>
           </md-content>
         </md-content>
@@ -213,7 +213,7 @@
           <md-divider class="entry-divider"></md-divider>
           <md-content class="entry-skill">
             <span class="entry-skill" ng-repeat="travel in cv.travels">
-              {{travel}}<span ng-show="!$last"> | </span>
+              {{travel}}<span ng-show="!$last">, </span>
             </span>
           </md-content>
         </md-content>
